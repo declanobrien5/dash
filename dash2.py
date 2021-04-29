@@ -89,6 +89,7 @@ def player_display(players):
     dff = df[df.name.str.contains('|'.join(players))]
     return generate_table(dff)
 
+server = app.server 
 
 if __name__ == '__main__':
     app.run_server(debug=False)
